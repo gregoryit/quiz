@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Ваш результат:</h1>
+<div class="outer-div"><h3>{{ right }} правильных ответов из {{ total }}</h3></div>
+<a href="{{url_for('index')}}" class="button"> В начало </a>
+</body>
